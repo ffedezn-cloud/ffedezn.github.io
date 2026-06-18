@@ -16,133 +16,127 @@
         body {
             font-family: 'Inter', sans-serif;
             background: #0a0a0f;
-            color: #e0e0e0;
+            color: #d0d0d0;
             min-height: 100vh;
+            line-height: 1.5;
         }
 
         /* ========== HEADER ========== */
         .header {
             text-align: center;
-            padding: 60px 20px 40px;
+            padding: 40px 20px 28px;
             background: linear-gradient(180deg, #14141a 0%, #0a0a0f 100%);
             border-bottom: 1px solid #1a1a24;
         }
 
         .header h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -1px;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: -0.5px;
         }
 
         .header p {
             color: #8888aa;
-            font-size: 1.1rem;
-            margin-top: 8px;
+            font-size: 0.9rem;
+            margin-top: 4px;
             font-weight: 300;
         }
 
         .header .badge {
             display: inline-block;
-            margin-top: 12px;
-            padding: 4px 16px;
+            margin-top: 8px;
+            padding: 2px 12px;
             background: #1a1a24;
             border: 1px solid #2a2a35;
-            border-radius: 20px;
-            font-size: 0.75rem;
+            border-radius: 14px;
+            font-size: 0.65rem;
             color: #8888aa;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
         }
 
         /* ========== CONTAINER ========== */
         .container {
-            max-width: 1300px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 40px 20px 60px;
+            padding: 28px 20px 40px;
         }
 
         /* ========== SECTION TITLE ========== */
         .section-title {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: #ffffff;
-            margin-bottom: 24px;
-            padding-bottom: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #666688;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
             border-bottom: 1px solid #1a1a24;
-        }
-
-        .section-title span {
-            color: #8888aa;
-            font-weight: 400;
         }
 
         /* ========== GRID ========== */
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 24px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 14px;
+            margin-bottom: 28px;
         }
 
         /* ========== CARDS ========== */
         .card {
             background: #14141a;
             border: 1px solid #1a1a24;
-            border-radius: 12px;
-            padding: 28px 24px;
-            transition: all 0.3s ease;
-            cursor: pointer;
+            border-radius: 6px;
+            padding: 18px 18px 16px;
+            transition: all 0.25s ease;
             position: relative;
-            overflow: hidden;
         }
 
         .card:hover {
-            transform: translateY(-4px);
             border-color: #2a2a35;
-            box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+            background: #16161e;
         }
 
         .card .icon {
-            font-size: 2.8rem;
+            font-size: 1.4rem;
             display: block;
-            margin-bottom: 12px;
+            margin-bottom: 6px;
+            opacity: 0.7;
         }
 
         .card h3 {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             font-weight: 600;
             color: #ffffff;
-            margin-bottom: 6px;
+            margin-bottom: 2px;
         }
 
         .card .subtitle {
-            font-size: 0.85rem;
+            font-size: 0.7rem;
             color: #8888aa;
-            margin-bottom: 12px;
+            margin-bottom: 6px;
         }
 
         .card p {
-            font-size: 0.9rem;
-            color: #b0b0c0;
-            line-height: 1.6;
-            margin-bottom: 16px;
+            font-size: 0.8rem;
+            color: #a0a0b0;
+            line-height: 1.5;
+            margin-bottom: 10px;
         }
 
         .card .tags {
             display: flex;
-            gap: 6px;
+            gap: 4px;
             flex-wrap: wrap;
-            margin-bottom: 16px;
+            margin-bottom: 10px;
         }
 
         .card .tag {
-            padding: 2px 12px;
-            border-radius: 12px;
-            font-size: 0.7rem;
+            padding: 1px 8px;
+            border-radius: 8px;
+            font-size: 0.55rem;
             font-weight: 500;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.2px;
             text-transform: uppercase;
         }
 
@@ -173,12 +167,12 @@
 
         .card .btn {
             display: inline-block;
-            padding: 10px 28px;
+            padding: 5px 16px;
             background: #1a1a24;
             border: 1px solid #2a2a35;
-            border-radius: 8px;
-            color: #e0e0e0;
-            font-size: 0.85rem;
+            border-radius: 4px;
+            color: #d0d0d0;
+            font-size: 0.75rem;
             font-weight: 500;
             text-decoration: none;
             transition: all 0.2s;
@@ -190,14 +184,14 @@
         }
 
         .card .btn-primary {
-            background: #667eea;
-            border-color: #667eea;
+            background: #2a2a4a;
+            border-color: #3a3a5a;
             color: #ffffff;
         }
 
         .card .btn-primary:hover {
-            background: #5a6fd6;
-            border-color: #5a6fd6;
+            background: #3a3a5a;
+            border-color: #4a4a6a;
         }
 
         .card .btn-external {
@@ -211,38 +205,38 @@
 
         .card .badge-new {
             position: absolute;
-            top: 12px;
-            right: 12px;
-            padding: 2px 12px;
-            background: #5a2a2a;
-            border: 1px solid #7a3a3a;
-            border-radius: 12px;
-            font-size: 0.6rem;
+            top: 8px;
+            right: 8px;
+            padding: 1px 8px;
+            background: #3a2a2a;
+            border: 1px solid #5a3a3a;
+            border-radius: 8px;
+            font-size: 0.5rem;
             color: #ee8a8a;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
         }
 
         .card .badge-updated {
             position: absolute;
-            top: 12px;
-            right: 12px;
-            padding: 2px 12px;
+            top: 8px;
+            right: 8px;
+            padding: 1px 8px;
             background: #1a3a2a;
             border: 1px solid #2a5a3a;
-            border-radius: 12px;
-            font-size: 0.6rem;
+            border-radius: 8px;
+            font-size: 0.5rem;
             color: #8aee8a;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
         }
 
-        /* ========== WEBAPP CARD DESTACADA ========== */
+        /* ========== CARD DESTACADA ========== */
         .card.featured {
             border-color: #2a2a4a;
-            background: #14142a;
+            background: #12122a;
         }
 
         .card.featured:hover {
@@ -252,50 +246,47 @@
         /* ========== FOOTER ========== */
         .footer {
             text-align: center;
-            padding: 40px 20px;
+            padding: 24px 20px;
             border-top: 1px solid #1a1a24;
-            color: #555577;
-            font-size: 0.85rem;
+            color: #444466;
+            font-size: 0.7rem;
         }
 
         .footer a {
-            color: #8888aa;
+            color: #666688;
             text-decoration: none;
         }
 
         .footer a:hover {
-            color: #e0e0e0;
+            color: #a0a0b0;
         }
 
         /* ========== RESPONSIVE ========== */
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 2rem;
-            }
-            .header p {
-                font-size: 0.95rem;
+                font-size: 1.5rem;
             }
             .grid {
                 grid-template-columns: 1fr;
-                gap: 16px;
+                gap: 10px;
             }
             .container {
-                padding: 20px 16px 40px;
+                padding: 16px 14px 28px;
             }
             .card {
-                padding: 20px;
+                padding: 14px;
             }
         }
 
         @media (max-width: 480px) {
             .header {
-                padding: 40px 16px 30px;
+                padding: 28px 16px 20px;
             }
             .header h1 {
-                font-size: 1.6rem;
+                font-size: 1.3rem;
             }
             .card .icon {
-                font-size: 2.2rem;
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -305,22 +296,21 @@
 <!-- ========== HEADER ========== -->
 <header class="header">
     <h1>Laboratorio de Simulaciones</h1>
-    <p>Sistemas de Control · Optimización de Procesos · Análisis de Negocios</p>
-    <span class="badge">✦ Portal de herramientas interactivas</span>
+    <p>Simulación de procesos · Control · Modelado de negocios</p>
+    <span class="badge">Portal de herramientas interactivas</span>
 </header>
 
 <!-- ========== MAIN CONTENT ========== -->
 <div class="container">
 
-    <!-- ===== SECCIÓN: SISTEMA DE GESTIÓN ===== -->
-    <div class="section-title">Sistema de Gestión <span>· Operaciones diarias</span></div>
+    <!-- ===== SISTEMA DE GESTIÓN ===== -->
+    <div class="section-title">Sistema de Gestión</div>
     <div class="grid">
-        <!-- WebApp - Destacada -->
         <div class="card featured">
             <span class="icon">📋</span>
             <h3>Sistema de Gestión</h3>
             <div class="subtitle">Mantenimiento · Producción · Calidad · Stock</div>
-            <p>Plataforma completa para la gestión operativa de la línea 4000. Registro de tareas, control de stock, órdenes de trabajo y análisis de confiabilidad.</p>
+            <p>Herramienta operativa para mantenimiento preventivo basado en RCM. Registro de tareas, control de stock, órdenes de trabajo y análisis de confiabilidad en línea de embotellado.</p>
             <div class="tags">
                 <span class="tag tag-blue">App Script</span>
                 <span class="tag tag-green">Google Sheets</span>
@@ -328,23 +318,23 @@
             </div>
             <a href="https://script.google.com/macros/s/AKfycbzpT8Wn-2EYmtTLg5PLhT6bv3UWj1LjXX0JWiAzEVkogxOQXinPt5bXlklBQgX7soA/exec" 
                target="_blank" 
+               rel="noopener noreferrer"
                class="btn btn-primary">
-                Acceder al Sistema
+                Acceder al sistema
             </a>
             <span class="badge-updated">Actualizado</span>
         </div>
     </div>
 
-    <!-- ===== SECCIÓN: SIMULADORES DE PROCESOS ===== -->
-    <div class="section-title">Simuladores de Procesos <span>· Ingeniería y Control</span></div>
+    <!-- ===== SIMULACIÓN DE PROCESOS ===== -->
+    <div class="section-title">Simulación de Procesos</div>
     <div class="grid">
 
-        <!-- Simulador Tanque Gravitatorio -->
         <div class="card">
             <span class="icon">💧</span>
             <h3>Tanque Gravitatorio</h3>
             <div class="subtitle">Descarga por gravedad</div>
-            <p>Simulación dinámica de un tanque con descarga gravitatoria. Analiza el efecto de la apertura de válvula en el nivel del líquido.</p>
+            <p>Simulación dinámica de un tanque con descarga gravitatoria. Permite analizar el efecto de la apertura de válvula en el nivel del líquido para la toma de decisiones operativas.</p>
             <div class="tags">
                 <span class="tag tag-purple">Python</span>
                 <span class="tag tag-blue">Streamlit</span>
@@ -352,17 +342,17 @@
             </div>
             <a href="https://simulacion-tanque.streamlit.app" 
                target="_blank" 
+               rel="noopener noreferrer"
                class="btn btn-external">
-                Abrir Simulador →
+                Abrir simulador
             </a>
         </div>
 
-        <!-- Simulador Tanque Calefaccionado -->
         <div class="card">
             <span class="icon">🔥</span>
             <h3>Tanque Calefaccionado</h3>
             <div class="subtitle">Con serpentín de vapor</div>
-            <p>Modelado de un tanque con intercambio de calor. Control de nivel y temperatura con agitación y serpentín de vapor.</p>
+            <p>Modelado de un tanque con intercambio de calor. Permite controlar nivel y temperatura con agitación y serpentín de vapor para simular escenarios reales de proceso.</p>
             <div class="tags">
                 <span class="tag tag-purple">Python</span>
                 <span class="tag tag-blue">Streamlit</span>
@@ -370,23 +360,23 @@
             </div>
             <a href="https://tanque-calefaccionado.streamlit.app" 
                target="_blank" 
+               rel="noopener noreferrer"
                class="btn btn-external">
-                Abrir Simulador →
+                Abrir simulador
             </a>
             <span class="badge-new">Nuevo</span>
         </div>
     </div>
 
-    <!-- ===== SECCIÓN: CONTROL Y OPTIMIZACIÓN ===== -->
-    <div class="section-title">Control y Optimización <span>· Sintonización de Controladores</span></div>
+    <!-- ===== CONTROL Y OPTIMIZACIÓN ===== -->
+    <div class="section-title">Control y Optimización</div>
     <div class="grid">
 
-        <!-- Sintonizador PI -->
         <div class="card">
             <span class="icon">🎯</span>
             <h3>Sintonizador PI</h3>
             <div class="subtitle">Tanque calefaccionado con controlador</div>
-            <p>Sintonizador interactivo de controlador PI para tanque calefaccionado. Ajusta ganancia proporcional, tiempo integral y bias en tiempo real.</p>
+            <p>Sintonizador interactivo de controlador PI para tanque calefaccionado. Permite ajustar ganancia proporcional, tiempo integral y bias para optimizar la respuesta del sistema.</p>
             <div class="tags">
                 <span class="tag tag-purple">Python</span>
                 <span class="tag tag-blue">Streamlit</span>
@@ -394,22 +384,22 @@
             </div>
             <a href="https://sintonizador-pi-tanque.streamlit.app" 
                target="_blank" 
+               rel="noopener noreferrer"
                class="btn btn-external">
-                Abrir Simulador →
+                Abrir simulador
             </a>
         </div>
     </div>
 
-    <!-- ===== SECCIÓN: SIMULACIÓN DE NEGOCIOS ===== -->
-    <div class="section-title">Simulación de Negocios <span>· BPMN y Procesos</span></div>
+    <!-- ===== MODELADO DE PROCESOS DE NEGOCIOS ===== -->
+    <div class="section-title">Modelado de Procesos de Negocios</div>
     <div class="grid">
 
-        <!-- BPMN Banco ABC -->
         <div class="card">
             <span class="icon">🏦</span>
             <h3>BPMN - Banco ABC</h3>
             <div class="subtitle">Análisis de procesos de atención al cliente</div>
-            <p>Simulación de procesos de negocio con BPMN. Identificación de cuellos de botella y propuestas de mejora para el banco.</p>
+            <p>Simulación de procesos de negocio con BPMN. Permite identificar cuellos de botella y proponer medidas de rediseño en la cadena de valor de una organización.</p>
             <div class="tags">
                 <span class="tag tag-purple">Python</span>
                 <span class="tag tag-blue">Streamlit</span>
@@ -417,8 +407,9 @@
             </div>
             <a href="https://bpmn-banco-abc-demo.streamlit.app" 
                target="_blank" 
+               rel="noopener noreferrer"
                class="btn btn-external">
-                Abrir Simulador →
+                Abrir simulador
             </a>
             <span class="badge-updated">Actualizado</span>
         </div>
@@ -429,12 +420,9 @@
 <!-- ========== FOOTER ========== -->
 <footer class="footer">
     <p>
-        Laboratorio de Simulaciones · Desarrollado con 
-        <a href="https://streamlit.io" target="_blank">Streamlit</a> y 
+        Desarrollado con 
+        <a href="https://streamlit.io" target="_blank">Streamlit</a> · 
         <a href="https://developers.google.com/apps-script" target="_blank">Google App Script</a>
-    </p>
-    <p style="margin-top: 6px; font-size: 0.75rem; color: #444466;">
-        © 2026 · Todos los derechos reservados
     </p>
 </footer>
 
