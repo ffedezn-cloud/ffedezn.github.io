@@ -15,8 +15,8 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: #0a0a0f;
-            color: #d0d0d0;
+            background: #ffffff;
+            color: #262730;
             min-height: 100vh;
             line-height: 1.5;
         }
@@ -24,20 +24,20 @@
         /* ========== HEADER ========== */
         .header {
             text-align: center;
-            padding: 36px 20px 24px;
-            background: linear-gradient(180deg, #14141a 0%, #0a0a0f 100%);
-            border-bottom: 1px solid #1a1a24;
+            padding: 32px 20px 20px;
+            background: #f0f2f6;
+            border-bottom: 1px solid #e0e0e0;
         }
 
         .header h1 {
             font-size: 1.8rem;
             font-weight: 600;
-            color: #ffffff;
+            color: #262730;
             letter-spacing: -0.5px;
         }
 
         .header p {
-            color: #8888aa;
+            color: #6c6c8a;
             font-size: 0.85rem;
             margin-top: 4px;
             font-weight: 300;
@@ -47,11 +47,11 @@
             display: inline-block;
             margin-top: 6px;
             padding: 2px 10px;
-            background: #1a1a24;
-            border: 1px solid #2a2a35;
+            background: #e8e8ea;
+            border: 1px solid #d0d0d0;
             border-radius: 12px;
             font-size: 0.6rem;
-            color: #666688;
+            color: #6c6c8a;
             letter-spacing: 0.3px;
         }
 
@@ -60,18 +60,19 @@
             max-width: 1050px;
             margin: 0 auto;
             padding: 24px 20px 32px;
+            background: #ffffff;
         }
 
         /* ========== SECTION TITLE ========== */
         .section-title {
             font-size: 0.7rem;
             font-weight: 600;
-            color: #555577;
+            color: #6c6c8a;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 10px;
             padding-bottom: 5px;
-            border-bottom: 1px solid #1a1a24;
+            border-bottom: 1px solid #e0e0e0;
         }
 
         /* ========== GRID ========== */
@@ -84,23 +85,24 @@
 
         /* ========== CARDS ========== */
         .card {
-            background: #14141a;
-            border: 1px solid #1a1a24;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
             border-radius: 6px;
             padding: 16px 16px 14px;
             transition: all 0.25s ease;
             position: relative;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
         }
 
         .card:hover {
-            border-color: #2a2a35;
-            background: #16161e;
+            border-color: #b0b0b0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
         }
 
         .card .label {
-            font-size: 0.6rem;
+            font-size: 0.55rem;
             font-weight: 500;
-            color: #555577;
+            color: #6c6c8a;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             margin-bottom: 2px;
@@ -109,19 +111,19 @@
         .card h3 {
             font-size: 0.9rem;
             font-weight: 600;
-            color: #ffffff;
+            color: #262730;
             margin-bottom: 2px;
         }
 
         .card .subtitle {
             font-size: 0.65rem;
-            color: #777799;
+            color: #6c6c8a;
             margin-bottom: 6px;
         }
 
         .card p {
             font-size: 0.78rem;
-            color: #9999aa;
+            color: #4a4a5a;
             line-height: 1.5;
             margin-bottom: 10px;
         }
@@ -143,37 +145,37 @@
         }
 
         .tag-blue {
-            background: #1a2a3a;
-            color: #7a9acc;
+            background: #e8f0fe;
+            color: #1a73e8;
         }
 
         .tag-purple {
-            background: #2a1a3a;
-            color: #9a7acc;
+            background: #f0e8fe;
+            color: #7a3acc;
         }
 
         .tag-green {
-            background: #1a2a1a;
-            color: #7acc7a;
+            background: #e8f8e8;
+            color: #1a8a1a;
         }
 
         .tag-orange {
-            background: #3a2a1a;
-            color: #cc9a7a;
+            background: #fef0e8;
+            color: #cc7a3a;
         }
 
         .tag-gray {
-            background: #1a1a1a;
-            color: #777777;
+            background: #f0f0f0;
+            color: #6c6c8a;
         }
 
         .card .btn {
             display: inline-block;
             padding: 4px 14px;
-            background: #1a1a24;
-            border: 1px solid #2a2a35;
+            background: #f0f0f0;
+            border: 1px solid #d0d0d0;
             border-radius: 4px;
-            color: #c0c0d0;
+            color: #262730;
             font-size: 0.7rem;
             font-weight: 500;
             text-decoration: none;
@@ -181,28 +183,28 @@
         }
 
         .card .btn:hover {
-            background: #2a2a35;
-            border-color: #3a3a4a;
+            background: #e0e0e0;
+            border-color: #b0b0b0;
         }
 
         .card .btn-primary {
-            background: #2a2a4a;
-            border-color: #3a3a5a;
-            color: #ffffff;
+            background: #e8f0fe;
+            border-color: #b0c8e8;
+            color: #1a5a9a;
         }
 
         .card .btn-primary:hover {
-            background: #3a3a5a;
-            border-color: #4a4a6a;
+            background: #d0e0f8;
+            border-color: #8aacd0;
         }
 
         .card .btn-external {
-            background: transparent;
-            border-color: #2a2a35;
+            background: #f0f0f0;
+            border-color: #d0d0d0;
         }
 
         .card .btn-external:hover {
-            background: #1a1a24;
+            background: #e0e0e0;
         }
 
         .card .badge-new {
@@ -210,11 +212,11 @@
             top: 8px;
             right: 8px;
             padding: 1px 8px;
-            background: #2a1a1a;
-            border: 1px solid #4a2a2a;
+            background: #f0e8e8;
+            border: 1px solid #e0c8c8;
             border-radius: 8px;
             font-size: 0.5rem;
-            color: #cc7a7a;
+            color: #aa5a5a;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.3px;
@@ -225,11 +227,11 @@
             top: 8px;
             right: 8px;
             padding: 1px 8px;
-            background: #1a2a1a;
-            border: 1px solid #2a4a2a;
+            background: #e8f0e8;
+            border: 1px solid #c8d8c8;
             border-radius: 8px;
             font-size: 0.5rem;
-            color: #7acc7a;
+            color: #5a8a5a;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.3px;
@@ -237,34 +239,34 @@
 
         /* ========== CARD DESTACADA ========== */
         .card.featured {
-            border-color: #2a2a4a;
-            background: #111122;
+            border-color: #b0c8e8;
+            background: #f8faff;
         }
 
         .card.featured:hover {
-            border-color: #3a3a6a;
+            border-color: #8aacd0;
         }
 
         /* ========== FOOTER ========== */
         .footer {
             text-align: center;
             padding: 20px 20px;
-            border-top: 1px solid #1a1a24;
-            color: #3a3a55;
+            border-top: 1px solid #e0e0e0;
+            color: #8a8aaa;
             font-size: 0.65rem;
         }
 
         .footer a {
-            color: #555577;
+            color: #6c6c8a;
             text-decoration: none;
         }
 
         .footer a:hover {
-            color: #8888aa;
+            color: #262730;
         }
 
         .footer .separator {
-            color: #2a2a3a;
+            color: #d0d0d0;
             margin: 0 6px;
         }
 
@@ -431,10 +433,9 @@
 
 <!-- ========== FOOTER ========== -->
 <footer class="footer">
-    <span>Desarrollado con</span>
-    <a href="https://streamlit.io" target="_blank">Streamlit</a>
+    <span>Herramientas interactivas</span>
     <span class="separator">·</span>
-    <a href="https://developers.google.com/apps-script" target="_blank">Google App Script</a>
+    <span>Simulación y optimización</span>
 </footer>
 
 </body>
